@@ -77,6 +77,8 @@ Node with smallest Node ID is strongest in CAN bus arbitration.
 27 |`Send_Respond_Iq_data` | Send/Respond | Iq current
 28 |`Send_Respond_Encoder_data` | Send/Respond | Position [Encoder ticks] <br /> Velocity [Encoder ticks/s]
 10 |`Send_Respond_Ping` | Send/Respond | None
+33 |`Send_Respond_Kt` | Send/Respond | Motor Kt value
+
 
 !!! Note annotate "" 
 
@@ -797,6 +799,20 @@ This command will request that motor driver responds with its own ping.
 * Python API reference: Send_Respond_Ping() <br />
 * Type of frame: REMOTE <br />
 * Length: 0 byte 
+
+### **Send_Respond_Kt**
+
+!!! Note annotate "" 
+
+This command will request that motor driver responds with its own Kt value. 
+ <br /> Direction host -> driver is remote frame and direction driver -> host is standard data frame.
+
+* Command ID: 33 <br />
+* Direction: Host -> BLDC driver <br />
+* Python API reference: Send_Respond_kt() <br />
+* Type of frame: REMOTE <br />
+* Length: 4 byte 
+
 
 **Driver respond to this command with:**<br />
 

@@ -2,7 +2,6 @@
 
 ## **Spectral Micro BLDC driver** 
 
-**Soon for sale**
 
 You can buy a STEPFOC starter kit here: [Link](https://source-robotics.com/products/STEPFOC-starter-kit) <br />
 Or buy a single motor driver here: [Link](https://source-robotics.com/products/STEPFOC-stepper-controller)  
